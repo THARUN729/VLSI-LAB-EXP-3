@@ -1,12 +1,13 @@
-SIMULATION AND IMPLEMENTATION OF MULTIPLIER
-**AIM: **
+# EXP.NO:03
+# DATE:26/03/2024
+# SIMULATION AND IMPLEMENTATION OF MULTIPLIER
+# AIM:
  To simulate and synthesis multiplier using Xilinx ISE.
-
-**APPARATUS REQUIRED:**
+# APPARATUS REQUIRED:
 Xilinx 14.7
 Spartan6 FPGA
-  
-**PROCEDURE:**
+# PROCEDURE:
+```
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
 STEP:2  Select the device family, device, package and speed.       
 STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
@@ -18,19 +19,11 @@ STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in th
 STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
-
-**Logic Diagram**
-2 bit Multiplier
-
+```
+# Logic Diagram
+# 2 bit Multiplier
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/7713750f-65e6-41c0-8082-5005eac4031c)
-
-**4 Bit Multiplier**
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
-
-
-**Verilog code**
-# 2 BIT MULTIPLIER:
+# CODE:
 ```
 module HalfAdder(a,b,sum,carry);
 input a,b;
@@ -51,8 +44,11 @@ HalfAdder h0(w1,w2,y[1],w4);
 HalfAdder h1(w3,w4,y[2],y[3]);
 endmodule
 ```
-
-# 4 BIT MULTIPLIER:
+# OUTPUT:
+![image](https://github.com/THARUN729/VLSI-LAB-EXP-3/assets/161407766/63101acd-8e34-4fd0-80fc-b14c019f6537)
+# 4 Bit Multiplier
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
+# CODE:
 ```
 module  ha (a,b,s,c);
 input a,b;
@@ -89,19 +85,9 @@ fa fa7 (w[14],x[2]&y[3],w[16], z[5],w[17]);
 fa fa8 (w[11],x[3]&y[3],w[17],z[6],z[7]);
 endmodule
 ```
-
-**Output Waveform**
-
-# 2 BIT MULTIPLIER:
-![image](https://github.com/THARUN729/VLSI-LAB-EXP-3/assets/161407766/63101acd-8e34-4fd0-80fc-b14c019f6537)
-
-# 4 BIT MULTIPLIER:
+# OUTPUT:
 ![image](https://github.com/THARUN729/VLSI-LAB-EXP-3/assets/161407766/64bdce6c-4d04-41ee-9b73-14db2528c378)
-
-
-
-
-**Result**
+# RESULT:
 Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using vivoda
 
 
